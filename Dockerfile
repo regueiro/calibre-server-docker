@@ -15,4 +15,4 @@ EXPOSE 8080
 RUN mkdir /opt/calibre && mkdir /opt/calibre/library
 
 VOLUME        ["/opt/calibre/library"]
-CMD           ["/usr/bin/calibre-server", "--with-library=/opt/calibre/library"]
+ENTRYPOINT           ["/usr/bin/calibre-server", "--with-library=/opt/calibre/library"]
