@@ -16,7 +16,7 @@ Using your library
 This container exposes the volume **/opt/calibre/server** and the port **8080**
 
 
-To allow calibre to run **your library** you have to **mount it as a volume** with -v /your/library/location:/opt/calibre/library
+To allow calibre to run **your library** you have to **mount it as a volume** with ``-v /your/library/location:/opt/calibre/library``
 
 
 Runnining the container
