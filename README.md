@@ -27,3 +27,8 @@ Runnining the container
 From now on:
 
     docker start calibre
+
+
+You can pass arguments to calibre-server:
+
+    docker run -p 80:8080 -v /media/calibre/books:/opt/calibre/library -name calibre regueiro/calibre --username user --password pass
