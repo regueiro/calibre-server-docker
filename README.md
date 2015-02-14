@@ -19,7 +19,7 @@ This container exposes the volume **/opt/calibre/server** and the port **8080**
 To allow calibre to run **your library** you have to **mount it as a volume** with ``-v /your/library/location:/opt/calibre/library``
 
 
-Runnining the container
+Running the container
 ------------------------
 
     docker run -p 80:8080 -v /media/calibre/books:/opt/calibre/library -name calibre regueiro/calibre
