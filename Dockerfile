@@ -1,4 +1,4 @@
-FROM racker/precise-with-updates:latest
+FROM ubuntu:xenial
 MAINTAINER santi@regueiro.es
 
 RUN apt-get update -y && apt-get dist-upgrade -y
