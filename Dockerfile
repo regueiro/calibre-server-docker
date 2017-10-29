@@ -1,4 +1,4 @@
-FROM ubuntu:xenial
+FROM ubuntu:17.10
 MAINTAINER santi@regueiro.es
 
 RUN apt-get update -y \
@@ -11,4 +11,4 @@ EXPOSE 8080
 RUN mkdir /opt/calibre && mkdir /opt/calibre/library
 
 VOLUME        ["/opt/calibre/library"]
-ENTRYPOINT           ["/usr/bin/calibre-server", "--with-library=/opt/calibre/library"]
+ENTRYPOINT           ["/usr/bin/calibre-server", "/opt/calibre/library"]
