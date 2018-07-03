@@ -22,7 +22,7 @@ To allow calibre to run **your library** you have to **mount it as a volume** wi
 Running the container
 ------------------------
 
-    docker run -p 80:8080 -v /media/calibre/books:/opt/calibre/library -name calibre regueiro/calibre
+    docker run -p 80:8080 -v /media/calibre/books:/opt/calibre/library -name calibre regueiro/calibre-server
 
 From now on:
 
@@ -31,4 +31,4 @@ From now on:
 
 You can pass arguments to calibre-server:
 
-    docker run -p 80:8080 -v /media/calibre/books:/opt/calibre/library -name calibre regueiro/calibre --username user --password pass
+    docker run -p 80:8080 -v /media/calibre/books:/opt/calibre/library -name calibre regueiro/calibre-server --username user --password pass
